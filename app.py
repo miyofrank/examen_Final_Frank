@@ -3,7 +3,7 @@ from estudiante import get_db_connection
 from datetime import datetime
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Necesario para mensajes flash (personaliza este valor)
+app.secret_key = 'key'  # Necesario para mensajes flash (personaliza este valor)
 
 # Ruta de inicio - lista de estudiantes
 @app.route('/', methods=['GET'])
