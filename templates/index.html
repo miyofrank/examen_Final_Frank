@@ -5,7 +5,7 @@
     <ul>
     {% for estudiante in estudiantes %}
         <li>
-            {{ estudiante.nombre }} {{ estudiante.apellido }} - 
+            <strong>{{ estudiante.nombre }} {{ estudiante.apellido }}</strong> -
             Nota: {{ estudiante.nota }} -
             <a href="{{ url_for('get_one_estudiante', id=estudiante.id) }}">Ver</a>
             <a href="{{ url_for('edit_one_estudiante', id=estudiante.id) }}">Editar</a>
