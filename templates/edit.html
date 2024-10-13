@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Editar Estudiante{% endblock %}
+{% block content %}
+    <h2>Editar Estudiante</h2>
+    <form action="{{ url_for('edit_one_estudiante', id=estudiante.id) }}" method="POST">
+        Nombre: <input type="text" name="nombre" value="{{ estudiante.nombre }}"><br>
+        Apellido: <input type="text" name="apellido" value="{{ estudiante.apellido }}"><br>
+        Nota: <input type="text" name="nota" value="{{ estudiante.nota }}"><br>
+        Aprobado: <input type="checkbox" name="aprobado" {% if estudiante.aprobado %}checked{% endif %}><br>
+        <button type="submit">Actualizar</button>
+    </form>
+{% endblock %}

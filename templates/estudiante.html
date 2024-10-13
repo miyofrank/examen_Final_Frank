@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}Ver Estudiante{% endblock %}
+{% block content %}
+    <h2>{{ estudiante.nombre }} {{ estudiante.apellido }}</h2>
+    <p>Nota: {{ estudiante.nota }}</p>
+    <p>Aprobado: {{ 'Sí' if estudiante.aprobado else 'No' }}</p>
+    <p>Fecha de registro: {{ estudiante.fecha }}</p>
+{% endblock %}

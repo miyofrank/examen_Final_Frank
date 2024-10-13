@@ -7,7 +7,7 @@ conn = sqlite3.connect('alumnos.db')
 # Crear un cursor para ejecutar comandos SQL
 cur = conn.cursor()
 
-# Crear la tabla 'alumnos'
+# Crear la tabla 'alumnos' si no existe
 cur.execute('''
 CREATE TABLE IF NOT EXISTS alumnos (
     id INTEGER PRIMARY KEY AUTOINCREMENT,

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Lista de Estudiantes{% endblock %}
+{% block content %}
+    <h2>Lista de Estudiantes</h2>
+    <ul>
+    {% for estudiante in estudiantes %}
+        <li>
+            {{ estudiante.nombre }} {{ estudiante.apellido }} - 
+            Nota: {{ estudiante.nota }} -
+            <a href="{{ url_for('get_one_estudiante', id=estudiante.id) }}">Ver</a>
+            <a href="{{ url_for('edit_one_estudiante', id=estudiante.id) }}">Editar</a>
+            <form action="{{ url_for('delete_one_estudiante', id=estudiante.id) }}" method="POST" style="display:inline;">
+                <button type="submit">Eliminar</button>
+            </form>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

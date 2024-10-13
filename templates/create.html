@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Crear Estudiante{% endblock %}
+{% block content %}
+    <h2>Crear Estudiante</h2>
+    <form action="{{ url_for('create_one_estudiante') }}" method="POST">
+        Nombre: <input type="text" name="nombre"><br>
+        Apellido: <input type="text" name="apellido"><br>
+        Nota: <input type="text" name="nota"><br>
+        Aprobado: <input type="checkbox" name="aprobado"><br>
+        <button type="submit">Crear</button>
+    </form>
+{% endblock %}
