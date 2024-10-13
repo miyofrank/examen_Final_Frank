@@ -14,10 +14,15 @@ Automatización de flujos de trabajo de datos:
 Python es ideal para la automatización de tareas relacionadas con datos, como la recolección, transformación y almacenamiento de información, con librerías como Airflow para gestionar flujos de trabajo complejos.
 
 2. ¿Cómo se diferencian Flask de Django? Argumentar.
+Flask:
+Flask es ligero y minimalista. Proporciona solo lo básico para desarrollar aplicaciones web, lo que lo hace más flexible y fácil de personalizar.
+Flask es un framework minimalista y flexible, lo que significa que permite a los desarrolladores construir aplicaciones de manera rápida y personalizable. Proporciona la base necesaria para comenzar, pero deja muchas decisiones de diseño y arquitectura en manos del desarrollador. Esto lo convierte en una excelente opción para proyectos más pequeños o cuando se busca un control total sobre cada aspecto de la aplicación.
 
-Microframework: Flask es ligero y minimalista. Proporciona solo lo básico para desarrollar aplicaciones web, lo que lo hace más flexible y fácil de personalizar.
 
-Framework completo: Django es más grande y viene con muchas características "out of the box", como un ORM (Object-Relational Mapping), autenticación y administración de usuarios, entre otros.
+Framework completo: 
+Django es más grande y viene con muchas características "out of the box", como un ORM (Object-Relational Mapping), autenticación y administración de usuarios, entre otros.
+Django es un framework más completo que sigue el principio de "baterías incluidas". Ofrece muchas funcionalidades listas para usar, como autenticación, administración de bases de datos y herramientas para gestionar formularios, lo que permite a los desarrolladores concentrarse más en la lógica de negocio en lugar de preocuparse por la configuración inicial. Su estructura predefinida puede hacer que el desarrollo de aplicaciones más grandes sea más eficiente
+
 
 3. ¿Qué es un API? Explicar en sus propias palabras
 un conjunto de reglas que permite a diferentes app o sistemas a comunicarse entre si, facilita el intercambio de información, datos o servicios. como por ejemplo cuando creas un app y nesecita información o datos de un servidor sin tener que interactuar con la base de datos.
